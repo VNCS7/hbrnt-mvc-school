@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>br.com.eteczonaleste</groupId>
-  <artifactId>br.com.eteczonaleste</artifactId>
+  <artifactId>hbrnt-school</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>br.com.eteczonaleste</name>
+  <name>hbrnt-school</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -26,20 +26,28 @@
       <scope>test</scope>
     </dependency>
     
-    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
-	<dependency>
-    <groupId>org.hibernate</groupId>
-    <artifactId>hibernate-core</artifactId>
-    <version>5.3.6.Final</version>
-	</dependency>
-	
+     <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
 	<dependency>
 	    <groupId>mysql</groupId>
 	    <artifactId>mysql-connector-java</artifactId>
-	    <version>8.0.12</version>
+	    <version>8.0.11</version>
 	</dependency>
-    
-    
+    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+	<dependency>
+	    <groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-core</artifactId>
+	    <version>5.3.6.Final</version>
+	</dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
+<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
+	<dependency>
+	    <groupId>org.hibernate</groupId>
+	    <artifactId>hibernate-entitymanager</artifactId>
+	    <version>5.3.6.Final</version>
+	</dependency>
+
     
     
   </dependencies>
