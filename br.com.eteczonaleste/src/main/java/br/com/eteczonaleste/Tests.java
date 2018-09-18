@@ -4,6 +4,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
+import controller.AlunoDAO;
 import model.Aluno;
 import model.Curso;
 import model.Disciplina;
@@ -41,11 +42,12 @@ public class Tests {
 	
 		
 		//DEFINIÇÃO DOS VALORES
-		
+		try {
+			
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("meuPU");
+		//EntityManager em = emf.createEntityManager();
+		EntityManager em = new AlunoDAO().getConnection();
 		
-		EntityManager em = emf.createEntityManager();
-
 		em.getTransaction().begin();
 		em.persist(a);
 		em.persist(c);
@@ -55,6 +57,10 @@ public class Tests {
 
 		em.close();
 		emf.close();
+		}catch(Exception e) {
+			e.printStackTrace();
+			
+		}
 		
 	}
 
